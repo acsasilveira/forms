@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Acsa</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Contato</legend>
+                <div class="Nome">   
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="José" required />
+                </div>
+                <div class="Email">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="jose@jose.com.br" required />
+                </div>
+                <div class="selecionar">
+                    <input type="radio" name="sexo" value="Masculino" required />
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" value="Feminino" required />
+                    <label for="sexo">Feminino</label>
+                </div>
+                <div class="Lugar">
+                    <label for="lugar">Estado/Cidade</label>
+                    <select id="lugar" required>
+                        <option value="0"></option>
+                        <option value="1">Minas Gerais</option>
+                        <option value="2">São Paulo</option>
+                        <option value="3">Rio de Janeiro</option>
+                    </select>
+                    <input type="text" name="cidade" id="lugar" required />
+                </div>
+                <div class="arquivo">
+                    <label for="arquivo">Selecione um arquivo </label>
+                    <input type="file" name="arquivo" id="arquivo" required>
+                </div>
+                <div class="sugestao">
+                    <label for="sugestao">Sugestão:</label> <br>
+                    <textarea name="sugestao" required></textarea>
+                </div>
+                <div class="botao">
+                    <input type="image" src="./img/botao-enviar-dados.jpg"/>
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>
